@@ -56,7 +56,7 @@ if (age >= 0 && age <= 12) {
 
 // Запросить у пользователя трехзначное число и проверить, есть ли в нем одинаковые цифры.
 
- let number = prompt("Enter the number from 100 to 999");
+ let number = +prompt("Enter the number from 100 to 999");
  if (
    number[0] === number[1] ||
    number[0] === number[2] ||
@@ -72,7 +72,7 @@ if (age >= 0 && age <= 12) {
 // Запросить у пользователя год и проверить, високосный он или нет.
 // Високосный год либо кратен 400, либо кратен 4 и при этом не кратен 100.
 
- let year = prompt("Enter the year");
+ let year = +prompt("Enter the year");
 
  if (year % 4 == 0 && year % 100 !== 0) {
    console.log("yes, it's a leap year");
@@ -88,7 +88,7 @@ if (age >= 0 && age <= 12) {
 
 // Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
 
- let number = prompt("Enter the five-digit number");
+ let number = +prompt("Enter the five-digit number");
 
  if (number[0] === number[4] && number[1] === number[3]) {
    console.log("true");
@@ -166,7 +166,7 @@ if (age >= 0 && age <= 12) {
 
  let qwestion1 = prompt("what the number i guessed? Choose between 1, 2, 3");
  if (qwestion1 === "1") {
-   numCorrect = numCorrect + 2;
+   numCorrect += 2;
  }
 
  let qwestion2 = prompt("what the number i guessed? Choose between 1, 2, 3");
