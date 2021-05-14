@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.title1,
+.title2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+.default,
+.textzone,
+.textBlock {
+  width: 650px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  overflow: scroll;
+  outline: none;
+  resize: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  padding: 1rem 1rem;
+  display: block;
+}
+.textarea-unvisible {
+  display: none;
+}
+
+.dispNone {
+  display: none;
+}
+
+.myTable {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.sort-options {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 30rem;
+  margin: 30px auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0 15px;
+}
+
+.list {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.list-item {
+  font-size: 16px;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.list-item:nth-child(odd) {
+  background: rgb(255, 251, 243);
+}
+
+.textBlock {
+  background: #ffffcc;
+  margin-top: 2rem;
+  min-height: 100px;
+  height: 100px;
+  min-width: 30rem;
+  max-width: 90rem;
+  cursor: se-resize;
+  margin: 30px 0;
+  position: relative;
+}
+.resizer {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  right: 0;
+  bottom: 0;
+}
