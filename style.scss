@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+  background: #afafbe;
+}
+
+.pretitle {
+  font-size: 1.1rem;
+  font-family: 'Poppins';
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.title {
+  font-size: 5.4rem;
+  font-family: 'Poppins';
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.047;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.slider__item {
+  height: 25rem;
+  width: 25rem;
+  margin: 1rem;
+  opacity: 0.7;
+  text-align: center;
+  position: relative;
+}
+
+.slider__item1 {
+  background: url(/img2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider__item2 {
+  background: url(/img3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider__item3 {
+  background: url(/img/img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider__item4 {
+  background: url(/img/img4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider {
+  position: relative;
+  padding: 0 4rem;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  background: none;
+  position: absolute;
+  top: 50%;
+  z-index: 111;
+  font-size: 0;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.slick-arrow:hover {
+  opacity: 0.5;
+}
+
+.slick-arrow.slick-prev {
+  left: 0;
+  background-image: url(../img/lll.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.slick-arrow.slick-next {
+  right: 0;
+  background-image: url(../img/right.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.cover {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(rgba(27, 241, 173, 0.7), rgba(27, 241, 173, 0.7));
+  display: none;
+}
+
+.cover__text {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 5.6px;
+  position: absolute;
+  bottom: 10%;
+  left: 2rem;
+}
+
+.cover__author {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2.4px;
+  position: absolute;
+  bottom: 5%;
+  left: 2rem;
+}
