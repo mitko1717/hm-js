@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="result" readonly />
+      <div>
+        <button class="clear">C</button>
+        <button class="back">D</button>
+      </div>
+
+      <div>
+        <button type="button" class="calc-btn">7</button>
+        <button type="button" class="calc-btn">8</button>
+        <button type="button" class="calc-btn">9</button>
+        <button type="button" class="calc-btn">*</button>
+      </div>
+
+      <div>
+        <button type="button" class="calc-btn">4</button>
+        <button type="button" class="calc-btn">5</button>
+        <button type="button" class="calc-btn">6</button>
+        <button type="button" class="calc-btn">-</button>
+      </div>
+
+      <div>
+        <button type="button" class="calc-btn">1</button>
+        <button type="button" class="calc-btn">2</button>
+        <button type="button" class="calc-btn">3</button>
+        <button type="button" class="calc-btn">+</button>
+      </div>
+
+      <div>
+        <button type="button" class="calc-btn">.</button>
+        <button type="button" class="calc-btn">0</button>
+        <button type="button" class="calc-btn">/</button>
+        <button type="button" class="equal">=</button>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="tabs">
+        <div class="information tabs__section tabs__active">
+          <img class="icon active-icon" src="img/tab1.svg" alt="" />
+          <h4 class="tabs__title">INFORMATION</h4>
+        </div>
+        <div class="ratings tabs__section">
+          <img class="icon" src="img/tab2.svg" alt="" />
+          <h4 class="tabs__title">RATINGS INFO</h4>
+        </div>
+        <div class="wheretobuy tabs__section">
+          <img class="icon" src="img/tab3.svg" alt="" />
+          <h4 class="tabs__title">WHERE TO BUY</h4>
+        </div>
+      </div>
+
+      <div class="description">
+        <div class="information-tab">
+          <div class="information-tab__left">
+            <img
+              class="information-tab__left--image"
+              src="img/cover.png"
+              alt="cover"
+            />
+            <div class="information-tab__stars">
+              <img src="img/goldstar.svg" alt="" />
+              <img src="img/goldstar.svg" alt="" />
+              <img src="img/goldstar.svg" alt="" />
+              <img src="img/goldstar.svg" alt="" />
+              <img src="img/star.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="information-tab__right active-tab">
+            <div class="desc">
+              <div class="desc__info">
+                <div class="desc__title">
+                  FarCry 4
+                  <div class="desc__subtitle">First Released Nov 17, 2014</div>
+                </div>
+
+                <div class="desc__text">
+                  In Far Cry 4, players find themselves in Kyrat, a
+                  breathtaking, perilous and wild region of the Hima layas
+                  struggling under the regime of a despotic self-appointed king.
+                </div>
+              </div>
+
+              <div class="desc__cta cta">
+                <p class="cta__price">$59.96</p>
+                <div class="cta__butn">BUY IT NOW</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ratings-tab notactive-tab">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Necessitatibus placeat rem quis excepturi in dignissimos officiis,
+          quia impedit earum quos doloribus repudiandae deleniti reprehenderit
+          illum, id, dolores voluptatibus voluptas sit. <br />
+          <br />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga facilis
+          culpa pariatur odio distinctio exercitationem! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. <br />
+          <br />
+          Modi quaerat distinctio, quae perspiciatis atque blanditiis natus
+          velit, deleniti et corporis ex! Voluptatum, voluptates minima. Eius
+          dignissimos est autem tempore omnis. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Fuga facilis culpa pariatur odio
+          distinctio exercitationem!
+        </div>
+        <div class="wheretobuy-tab notactive-tab">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat
+          distinctio, quae perspiciatis atque blanditiis natus velit, deleniti
+          et corporis ex! Voluptatum, voluptates minima. Eius dignissimos est
+          autem tempore omnis. Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. <br />
+          <br />
+          Fuga facilis culpa pariatur odio distinctio exercitationem! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Modi quaerat
+          distinctio, quae perspiciatis atque blanditiis natus velit, deleniti
+          et corporis ex! <br />
+          <br />Voluptatum, voluptates minima. Eius dignissimos est autem
+          tempore omnis. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Fuga facilis culpa pariatur odio distinctio exercitationem!
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+  </body>
+</html>
