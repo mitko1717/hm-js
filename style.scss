@@ -1,0 +1,152 @@
+.container {
+  width: 37.5rem;
+  height: 35rem;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.tabs {
+  background-color: rgb(38, 40, 54);
+  height: 115px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding: 0 2rem;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 9.5rem;
+    opacity: 0.5;
+    cursor: pointer;
+    height: 100%;
+    border-bottom: 3px solid rgb(38, 40, 54);
+  }
+
+  &__active {
+    opacity: 1;
+    border-bottom: 3px solid #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+
+  &__title {
+    font-family: 'Lato', sans-serif;
+    color: rgb(251, 251, 251);
+    font-weight: 300;
+    padding-top: 0.4rem;
+  }
+}
+
+.information-tab {
+  background-color: rgb(48, 50, 66);
+  box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+  width: 37.5rem;
+  height: 25rem;
+  display: flex;
+
+  &__left {
+    width: 240px;
+    text-align: center;
+    padding: 3.5rem 0;
+
+    &--image {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__right {
+    width: 360px;
+    font-family: 'Lato';
+    color: rgb(251, 251, 251);
+    padding: 3.5rem 2.5rem 3.5rem 0;
+  }
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  &__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-top: 0.3rem;
+  }
+  &__text {
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.4rem;
+  }
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+
+  &__price {
+    font-size: 2.5rem;
+  }
+
+  &__butn {
+    font-size: 1rem;
+    font-family: 'Lato';
+    background-color: rgb(43, 224, 143);
+    outline: none;
+    padding: 0.7rem 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    box-shadow: 20px 23px 57px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.ratings-tab,
+.wheretobuy-tab {
+  font-family: 'Lato', sans-serif;
+  color: rgb(251, 251, 251);
+  font-weight: 300;
+  padding: 3.5rem 5rem;
+  background-color: rgb(48, 50, 66);
+  box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+  height: 25rem;
+}
+
+.active-tab {
+  display: block;
+}
+
+.notactive-tab {
+  display: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
